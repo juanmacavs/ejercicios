@@ -1,44 +1,61 @@
 
 .container4{
     background-color: blue;
-    width: 500px;
-    height: 200px;
+    width: 31.25rem;
+    height: 12.5rem;
     margin: auto;
     position: relative;
 }
 .container4 div{
     background-color: blanchedalmond;
-    color: white;
     width: 6rem;
     height: 5rem;
 }
 .a{
+
     position: absolute;
-    left: 100px;
-    top: 10px;
+    left: 6.25rem;
+    top: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .b{
     position: absolute;
-    left: 200px;
-    top: 10px;
+    left: 12.5rem;
+    top: 0.625rem;
+    display: flex;
+    align-items: center;
 }
 .c{
+    background-color: red !important;
     position: absolute;
-    left: 300px;
-    top: 10px;
+    left: 18.75rem;
+    top: 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .d{
     position: absolute;
-    left: 100px;
-    top: 102px;
+    left: 6.25rem;
+    top: 6.375rem;
+    display: flex;
+    align-items: center;
 }
 .e{
     position: absolute;
-    left: 200px;
-    top: 102px;
+    left: 12.5rem;
+    top: 6.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .f{
+    background-color: red !important;
+    left: 18.75rem;
+    top: 6.375rem;
     position: absolute;
-    left: 300px;
-    top: 102px;
+    display: flex;
+    align-items: center;
 }
