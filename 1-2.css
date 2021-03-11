@@ -1,0 +1,44 @@
+
+.container4{
+    background-color: blue;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+.container4 div{
+    background-color: blanchedalmond;
+    color: white;
+    width: 6rem;
+    height: 5rem;
+}
+.a{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+.b{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+}
+.c{
+    position: absolute;
+    left: 300px;
+    top: 10px;
+}
+.d{
+    position: absolute;
+    left: 100px;
+    top: 102px;
+}
+.e{
+    position: absolute;
+    left: 200px;
+    top: 102px;
+}
+.f{
+    position: absolute;
+    left: 300px;
+    top: 102px;
+}

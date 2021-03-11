@@ -1,0 +1,52 @@
+.container{
+    background-color: blue;
+    width: 37.5rem;
+    height: 25rem;
+    margin: auto;
+}
+.container div{
+    background-color: aliceblue;
+    width: 6rem ;
+    height: 5rem ;
+    margin: auto ;
+    display: inline-block;
+}
+.container2{
+    background-color: blue;
+    width: 37.5rem;
+    height: 25rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container2 div{
+    width: 15%;
+    flex: none;
+}
+.container3{
+    background-color: blueviolet;
+    width: 37.5rem;
+    height: 25rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.container4{
+    background-color: blue;
+    width: 37.5rem;
+    height: 25rem;
+    margin: auto;
+    position: relative;
+}
+.container4 div{
+    background-color: blanchedalmond;
+    color: white;
+    width: 6rem;
+    height: 5rem;
+    position: absolute;
+}
+#1{
+    left: 100px;
+}
