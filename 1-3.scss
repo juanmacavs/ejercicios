@@ -1,0 +1,165 @@
+$widthcon: 100%;
+$heightcon: 100%;
+$contcolorchildbg: aquamarine;
+$contcolorchild: black;
+$m3color: red;
+@mixin Container(){
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+@mixin hijopa ($top, $left) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin hijopa2 ($top, $left) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    display: flex;
+    align-items: center;
+}
+
+body > div{
+    overflow: hidden;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    max-height: 100%;
+}
+.container{
+    @include Container();
+}
+.container div{
+    width: 13% ;
+    height: 14% ;
+    display: inline-block;
+    padding-top: 3%;
+    margin-top: 1%;
+    padding-left: 2%;
+    margin-left: 1%;
+}
+.container div:nth-child(2n+0) {
+    background-color:$contcolorchildbg;
+    color: $contcolorchild;  
+    
+}
+.container div:nth-child(2n+1) {
+    background-color: $contcolorchildbg;
+    color: $contcolorchild;
+    text-align: center;
+    
+}
+.container div:nth-child(3n+3){
+    background-color: $m3color;
+}
+.container2{
+    @include Container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container2 div{
+    width: 15%;
+    flex: none;
+    margin: 0.125rem;
+}
+.container2 div:nth-child(2n+0) {
+    background-color: $contcolorchildbg;
+    color: $contcolorchild;
+    display: flex;
+    align-items: center;
+}
+.container2 div:nth-child(2n+1) {
+    background-color: $contcolorchildbg;
+    color: $contcolorchild;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 div:nth-child(3n+3){
+    background-color: $m3color;
+}
+.container3{
+    @include Container();
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.container3 div:nth-child(2n+0) {
+    background-color: $contcolorchildbg;
+    color:$contcolorchild;
+    display: flex;
+    align-items: center;
+    margin: 0.125rem;
+}
+.container3 div:nth-child(2n+1) {
+    background-color: $contcolorchildbg;
+    color:$contcolorchild;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.125rem;
+}
+.container3 div:nth-child(3n+3){
+    background-color: $m3color;
+}
+
+.container4{
+    @include Container();
+    position: relative;
+}
+.container4 div{
+    background-color: blanchedalmond;
+    width: 13%;
+    height: 14%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.a{
+    @include hijopa(30%, 35%);
+}
+.b{
+    @include hijopa2(35%, 45%);
+
+}
+.c{
+    @include hijopa(35%, 60%);
+    background-color: $m3color !important;
+}
+.d{
+    @include hijopa2(50%, 30%);
+
+}
+.e{
+    @include hijopa(50%, 45%);
+
+}
+.f{
+    @include hijopa2(50%, 60%);
+    background-color: $m3color !important;
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+        div:nth-child(5n+0) {
+            background-color: yellow !important;
+        }
+    }
+  }
